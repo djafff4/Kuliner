@@ -13,7 +13,7 @@ void main() {
     await tester.pumpAndSettle();
 
     // Verify store title loads
-    expect(find.text('Warung Kuliner Sedap'), findsOneWidget);
+    expect(find.text('Warung Bakso dan Mie Ayam Mas Bro'), findsOneWidget);
 
     // Verify navigation destination exists
     expect(find.text('Kasir'), findsOneWidget);

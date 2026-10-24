@@ -15,9 +15,9 @@ class StoreSettings {
   final bool isDarkMode;
 
   const StoreSettings({
-    this.storeName = 'Warung Kuliner Sedap',
-    this.outletName = 'Outlet Kemang Raya',
-    this.address = 'Jl. Kemang Raya No. 45, Jakarta Selatan',
+    this.storeName = 'Warung Bakso dan Mie Ayam Mas Bro',
+    this.outletName = 'Outlet Kemantran',
+    this.address = 'Jl. Raya Kemantran',
     this.phone = '0812-3456-7890',
     this.npwp = '01.234.567.8-901.000',
     this.taxPercent = 10.0,

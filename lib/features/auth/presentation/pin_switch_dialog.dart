@@ -77,11 +77,21 @@ class _PinSwitchDialogState extends ConsumerState<PinSwitchDialog> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Row(
+                Row(
                   children: [
-                    Icon(Icons.lock_person_outlined, color: AppColors.primary, size: 24),
-                    SizedBox(width: 8),
-                    Text(
+                    Container(
+                      width: 28,
+                      height: 28,
+                      decoration: const BoxDecoration(shape: BoxShape.circle),
+                      child: ClipOval(
+                        child: Image.asset(
+                          'assets/images/logo.png',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 10),
+                    const Text(
                       'Ganti Kasir / Staf',
                       style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
                     ),

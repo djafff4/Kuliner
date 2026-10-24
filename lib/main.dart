@@ -32,7 +32,7 @@ class PosKulinerApp extends ConsumerWidget {
     final settings = ref.watch(settingsProvider);
 
     return MaterialApp(
-      title: 'POS Kuliner - Aplikasi Kasir UMKM',
+      title: 'AIDJ',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,

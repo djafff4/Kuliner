@@ -158,6 +158,52 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
             icon: Icons.storefront_outlined,
             isDark: isDark,
             children: [
+              Row(
+                children: [
+                  Container(
+                    width: 64,
+                    height: 64,
+                    decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      border: Border.all(color: AppColors.primary, width: 2),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppColors.primary.withValues(alpha: 0.15),
+                          blurRadius: 8,
+                          offset: const Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: ClipOval(
+                      child: Image.asset(
+                        'assets/images/logo.png',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 16),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text(
+                          'Logo Usaha Aktif',
+                          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+                        ),
+                        const SizedBox(height: 3),
+                        Text(
+                          'Logo kuliner resmi aktif di bilah atas aplikasi, struk transaksi, dan ikon sistem.',
+                          style: TextStyle(
+                            fontSize: 12,
+                            color: isDark ? AppColors.textSecondaryDark : AppColors.textSecondaryLight,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 16),
               TextField(
                 controller: _storeNameController,
                 decoration: const InputDecoration(labelText: 'Nama Usaha / Toko'),

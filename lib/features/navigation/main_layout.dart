@@ -50,19 +50,32 @@ class MainLayout extends ConsumerWidget {
         return Scaffold(
           // Universal Header across all pages
           appBar: AppBar(
-            leadingWidth: isWideScreen ? 240 : null,
+            leadingWidth: isWideScreen ? 280 : null,
             leading: isWideScreen
                 ? Padding(
                     padding: const EdgeInsets.only(left: 16),
                     child: Row(
                       children: [
                         Container(
-                          padding: const EdgeInsets.all(7),
+                          width: 36,
+                          height: 36,
                           decoration: BoxDecoration(
-                            color: AppColors.primary,
-                            borderRadius: BorderRadius.circular(10),
+                            shape: BoxShape.circle,
+                            border: Border.all(color: AppColors.primary.withValues(alpha: 0.3), width: 1.5),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withValues(alpha: 0.08),
+                                blurRadius: 4,
+                                offset: const Offset(0, 2),
+                              ),
+                            ],
                           ),
-                          child: const Icon(Icons.restaurant_menu, color: Colors.white, size: 20),
+                          child: ClipOval(
+                            child: Image.asset(
+                              'assets/images/logo.png',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
                         ),
                         const SizedBox(width: 10),
                         Expanded(
@@ -91,11 +104,40 @@ class MainLayout extends ConsumerWidget {
                   )
                 : null,
             title: !isWideScreen
-                ? Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                ? Row(
                     children: [
-                      Text(settings.storeName, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800)),
-                      Text(settings.outletName, style: const TextStyle(fontSize: 11, color: AppColors.textSecondaryLight)),
+                      Container(
+                        width: 32,
+                        height: 32,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: AppColors.primary.withValues(alpha: 0.3), width: 1.2),
+                        ),
+                        child: ClipOval(
+                          child: Image.asset(
+                            'assets/images/logo.png',
+                            fit: BoxFit.cover,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              settings.storeName,
+                              style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                            Text(
+                              settings.outletName,
+                              style: const TextStyle(fontSize: 11, color: AppColors.textSecondaryLight),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ],
+                        ),
+                      ),
                     ],
                   )
                 : null,

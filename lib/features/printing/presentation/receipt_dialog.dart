@@ -87,8 +87,18 @@ class _ReceiptDialogState extends ConsumerState<ReceiptDialog> with SingleTicker
           children: [
             Row(
               children: [
-                const Icon(Icons.print, color: AppColors.primary, size: 24),
-                const SizedBox(width: 8),
+                Container(
+                  width: 32,
+                  height: 32,
+                  decoration: const BoxDecoration(shape: BoxShape.circle),
+                  child: ClipOval(
+                    child: Image.asset(
+                      'assets/images/logo.png',
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 10),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
