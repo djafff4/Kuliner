@@ -106,7 +106,7 @@ lib/
 │   ├── services/
 │   │   └── supabase_service.dart     # Inisialisasi & instance Supabase Client
 │   ├── theme/
-│   │   ├── app_colors.dart           # Palet warna kuliner hangat, dark/light mode
+│   │   ├── app_colors.dart           # Palet warna kuliner khas logo (Marun, Krem, Karamel), dark/light mode
 │   │   └── app_theme.dart            # ThemeData & konfigurasi Google Fonts
 │   └── utils/
 │       ├── currency_formatter.dart   # Formatter Rupiah (Rp 25.000, Rp 25rb)

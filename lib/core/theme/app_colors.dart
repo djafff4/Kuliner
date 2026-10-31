@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  // Brand Primary (Culinary Warmth)
-  static const Color primary = Color(0xFFFF6B00);
-  static const Color primaryDark = Color(0xFFE65100);
-  static const Color primaryLight = Color(0xFFFFEAD6);
-  static const Color primaryAccent = Color(0xFFFF8533);
+  // Brand Primary (Culinary Heritage - Nguliners Maroon, Cream & Caramel)
+  static const Color primary = Color(0xFF8B151B); // Merah Marun / Deep Wine
+  static const Color primaryDark = Color(0xFF6B070D); // Marun Gelap
+  static const Color primaryLight = Color(0xFFF9EBD1); // Warm Cream / Putih Gading (khas mangkok mie)
+  static const Color primaryAccent = Color(0xFFCB946A); // Caramel / Golden Sand (aksen gelombang logo)
+  static const Color secondary = Color(0xFFCB946A);
 
   // Backgrounds & Surface
   static const Color bgLight = Color(0xFFF8FAFC);

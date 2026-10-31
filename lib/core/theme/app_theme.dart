@@ -11,7 +11,7 @@ class AppTheme {
       scaffoldBackgroundColor: AppColors.bgLight,
       colorScheme: const ColorScheme.light(
         primary: AppColors.primary,
-        secondary: AppColors.primaryDark,
+        secondary: AppColors.primaryAccent,
         surface: AppColors.surfaceLight,
         error: AppColors.danger,
         onPrimary: Colors.white,
@@ -122,7 +122,7 @@ class AppTheme {
       scaffoldBackgroundColor: AppColors.bgDark,
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primary,
-        secondary: AppColors.primaryDark,
+        secondary: AppColors.primaryAccent,
         surface: AppColors.surfaceDark,
         error: AppColors.danger,
         onPrimary: Colors.white,
