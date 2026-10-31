@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.kuliner.pos" "\0"
-            VALUE "FileDescription", "AIDJ" "\0"
+            VALUE "FileDescription", "Nguliners" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "AIDJ" "\0"
+            VALUE "InternalName", "Nguliners" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2026 com.kuliner.pos. All rights reserved." "\0"
-            VALUE "OriginalFilename", "AIDJ.exe" "\0"
-            VALUE "ProductName", "AIDJ" "\0"
+            VALUE "OriginalFilename", "Nguliners.exe" "\0"
+            VALUE "ProductName", "Nguliners" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

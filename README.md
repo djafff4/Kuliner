@@ -1,4 +1,4 @@
-# 🍽️ AIDJ - Aplikasi Kasir Point of Sale (POS) Kuliner Modern
+# 🍽️ Nguliners - Aplikasi Kasir Point of Sale (POS) Kuliner Modern
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.38.6-02569B?logo=flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-3.10.7-0175C2?logo=dart&logoColor=white)

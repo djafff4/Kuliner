@@ -1,11 +1,11 @@
 {
-    "name": "AIDJ",
-    "short_name": "AIDJ",
+    "name": "Nguliners",
+    "short_name": "Nguliners",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#FFFFFF",
     "theme_color": "#FF6B00",
-    "description": "Aplikasi Kasir POS Kuliner AIDJ",
+    "description": "Aplikasi Kasir POS Kuliner Nguliners",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

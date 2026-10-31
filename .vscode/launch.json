@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "POS Kuliner (Chrome - localhost:3000)",
+      "name": "Nguliners (Chrome - localhost:3000)",
       "request": "launch",
       "type": "dart",
       "deviceId": "chrome",
@@ -12,7 +12,7 @@
       ]
     },
     {
-      "name": "POS Kuliner (Android / Default)",
+      "name": "Nguliners (Android / Default)",
       "request": "launch",
       "type": "dart"
     }
